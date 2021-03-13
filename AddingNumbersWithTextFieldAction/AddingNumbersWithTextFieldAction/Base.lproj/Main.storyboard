@@ -76,14 +76,64 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwe-pb-3ro">
+                                <rect key="frame" x="35" y="614" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="onTouchFirstButton"/>
+                                <connections>
+                                    <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29M-ch-C6Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31k-Mn-i7q">
+                                <rect key="frame" x="227" y="613" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="button one"/>
+                                <connections>
+                                    <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYc-Pi-Mc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYz-pF-WCW">
+                                <rect key="frame" x="41" y="733" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="onTouchThirdButton"/>
+                                <connections>
+                                    <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QV-dc-VUt"/>
+                                    <action selector="onTouchThirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJc-tH-XS6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGX-cx-g0t">
+                                <rect key="frame" x="233" y="732" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="onTouchFirthButton"/>
+                                <connections>
+                                    <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gna-KB-Q59"/>
+                                    <action selector="onTouchFirthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAU-nf-tYs"/>
+                                    <action selector="onTouchThirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2r-Ax-WpM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6K-DX-uE5">
+                                <rect key="frame" x="227" y="612" width="140" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="onTouchSecondButton"/>
+                                <connections>
+                                    <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxc-y4-7Vc"/>
+                                    <action selector="onTouchSecondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Er-Hm-n2s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.60392159219999997" blue="0.21960783" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="firstBtn" destination="Wwe-pb-3ro" id="eaE-ww-0Ww"/>
                         <outlet property="firstNumber" destination="9Uc-KA-90W" id="NNc-X9-dfm"/>
                         <outlet property="resultBtn" destination="Grg-NM-caN" id="gdb-bD-T6g"/>
-                        <outlet property="resultLabel" destination="uNR-q2-utp" id="WsA-CQ-gku"/>
+                        <outlet property="resultLabel" destination="uNR-q2-utp" id="n3z-9z-49Q"/>
                         <outlet property="secondNumber" destination="Eqg-pf-0YZ" id="bZX-hG-6BW"/>
                         <outlet property="userInputTextField" destination="z1F-NQ-fsj" id="6LT-Nb-y0g"/>
                         <outlet property="userResultTextLabel" destination="VcK-hu-YVW" id="cgT-aQ-X1Q"/>
