@@ -80,7 +80,7 @@
                                 <rect key="frame" x="35" y="614" width="140" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="onTouchFirstButton"/>
+                                <state key="normal" title="btn1"/>
                                 <connections>
                                     <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29M-ch-C6Y"/>
                                 </connections>
@@ -98,7 +98,7 @@
                                 <rect key="frame" x="41" y="733" width="140" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="onTouchThirdButton"/>
+                                <state key="normal" title="btn3"/>
                                 <connections>
                                     <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1QV-dc-VUt"/>
                                     <action selector="onTouchThirdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJc-tH-XS6"/>
@@ -108,7 +108,7 @@
                                 <rect key="frame" x="233" y="732" width="140" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="onTouchFirthButton"/>
+                                <state key="normal" title="btn4"/>
                                 <connections>
                                     <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gna-KB-Q59"/>
                                     <action selector="onTouchFirthButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAU-nf-tYs"/>
@@ -119,7 +119,7 @@
                                 <rect key="frame" x="227" y="612" width="140" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="onTouchSecondButton"/>
+                                <state key="normal" title="btn2"/>
                                 <connections>
                                     <action selector="onTouchFirstButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxc-y4-7Vc"/>
                                     <action selector="onTouchSecondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Er-Hm-n2s"/>

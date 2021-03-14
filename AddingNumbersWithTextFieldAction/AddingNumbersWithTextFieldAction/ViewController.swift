@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func addNumbers(_ sender: UIButton) {
         let enteredFirstNumber:Int = Int(firstNumber.text ?? "") ?? 0
         let enteredSecondNumber:Int = Int(secondNumber.text ?? "") ?? 0
-        let result = enteredFirstNumber+enteredSecondNumber;
+        let result = enteredFirstNumber+enteredSecondNumber
         //print(result)
         //print(firstNumber.text ?? 0)
 //        print(resultBtn.titleLabel?.text )
@@ -34,12 +34,15 @@ class ViewController: UIViewController {
 //        resultBtn.titleLabel?.text = String(result) // NEED TO CHECK
         
         resultLabel.text = String(result)
+        resultBtn.setTitle("Clicked", for: .normal)
+        resultBtn.setTitle("Test", for: .highlighted)
+
+        
 //        print(resultBtn.titleLabel?.text )
 //        print(firstNumber.text ?? 0)
         //var result = enter
       //  sender.titleLabel?.text = result ?? ""
         
-        resultLabel.text = String(result)
     }
  
     override func viewDidLoad() {
@@ -77,13 +80,13 @@ class ViewController: UIViewController {
         print("YOur TOuch Name",onTouchBtnName)
         
         switch onTouchBtnName {
-        case "onTouchFirstButton":
+        case "btn1":
             onTouchBtn.setImage(UIImage(named: "Google"), for: .normal)
-        case "onTouchSecondButton":
+        case "btn2":
             onTouchBtn.setImage(UIImage(named: "Google"), for: .normal)
-        case "onTouchThirdButton":
+        case "btn3":
             onTouchBtn.setImage(UIImage(named: "Google"), for: .normal)
-        case "onTouchFirthButton":
+        case "btn4":
             onTouchBtn.setImage(UIImage(named: "Google"), for: .normal)
         default:
             print("YOur Default Now")
