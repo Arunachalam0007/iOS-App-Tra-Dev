@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         resultLabel.text = String(result)
         resultBtn.setTitle("Clicked", for: .normal)
-        resultBtn.setTitle("Test", for: .highlighted)
+        resultBtn.setTitle("Clicked", for: .highlighted)
 
         
 //        print(resultBtn.titleLabel?.text )
