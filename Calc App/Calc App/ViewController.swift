@@ -94,6 +94,12 @@ class ViewController: UIViewController {
         setResultBoardValue(labelValue: result)
     }
     
+    @IBAction func calcPrecentage(_ sender: UIButton) {
+        var getPercentage:Double = Double(resultBoardValue) ?? 0.0
+        getPercentage /= 100
+        
+        setResultBoardValue(labelValue: String(getPercentage))
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -101,4 +107,3 @@ class ViewController: UIViewController {
 
 
 }
-
