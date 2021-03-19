@@ -13,6 +13,7 @@
 		DB5DF5152600F2680091CCA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5DF5132600F2680091CCA8 /* Main.storyboard */; };
 		DB5DF5172600F2690091CCA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5DF5162600F2690091CCA8 /* Assets.xcassets */; };
 		DB5DF51A2600F2690091CCA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5DF5182600F2690091CCA8 /* LaunchScreen.storyboard */; };
+		DBC12E1F2605265000F1C8EA /* CricBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC12E1E2605265000F1C8EA /* CricBuzzViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB5DF5162600F2690091CCA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5DF5192600F2690091CCA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5DF51B2600F2690091CCA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC12E1E2605265000F1C8EA /* CricBuzzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricBuzzViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DB5DF50F2600F2680091CCA8 /* SceneDelegate.swift */,
 				DB5DF5112600F2680091CCA8 /* ViewController.swift */,
 				DB5DF5132600F2680091CCA8 /* Main.storyboard */,
+				DBC12E1E2605265000F1C8EA /* CricBuzzViewController.swift */,
 				DB5DF5162600F2690091CCA8 /* Assets.xcassets */,
 				DB5DF5182600F2690091CCA8 /* LaunchScreen.storyboard */,
 				DB5DF51B2600F2690091CCA8 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				DB5DF5122600F2680091CCA8 /* ViewController.swift in Sources */,
 				DB5DF50E2600F2680091CCA8 /* AppDelegate.swift in Sources */,
+				DBC12E1F2605265000F1C8EA /* CricBuzzViewController.swift in Sources */,
 				DB5DF5102600F2680091CCA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

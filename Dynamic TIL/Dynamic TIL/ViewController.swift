@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageBtn: UIButton!
     
     var dynamicLabel : [UILabel] = []
-    var dynamicTextField: [UITextField] = []
+    var             batsmanName: [UITextField] = []
     var dynamicImageView: [UIImageView] = []
     
     var count:Int = 0
@@ -70,14 +70,14 @@ class ViewController: UIViewController {
         let textFieldOriginY:Int = Int(textBtn.frame.origin.y)
         
         for i in 0..<count {
-            dynamicTextField.insert(UITextField(), at: 0)
-            dynamicTextField[0].frame = CGRect(x: textFieldOriginX, y: (textFieldOriginY+((i+1)*100)), width: 100, height: 100)
-            dynamicTextField[0].text = "ONE"
-            dynamicTextField[0].backgroundColor = .gray
-            dynamicTextField[0].textColor = .white
-            dynamicTextField[0].textAlignment = .center
-            dynamicTextField[0].tag = 11
-            self.view.addSubview(dynamicTextField[0])
+                        batsmanName.insert(UITextField(), at: 0)
+                        batsmanName[0].frame = CGRect(x: textFieldOriginX, y: (textFieldOriginY+((i+1)*100)), width: 100, height: 100)
+                        batsmanName[0].text = "ONE"
+                        batsmanName[0].backgroundColor = .gray
+                        batsmanName[0].textColor = .white
+                        batsmanName[0].textAlignment = .center
+                        batsmanName[0].tag = 11
+            self.view.addSubview(            batsmanName[0])
         }
     }
     
@@ -97,20 +97,12 @@ class ViewController: UIViewController {
     
     func clearDynamicTIL(){
         
-//        for view in view.subviews {
-//            if view.tag == 11 {
-//                view.removeFromSuperview()
-//            }
-//        }
         for view in view.subviews where view.tag == 11 {
             view.removeFromSuperview()
         }
 //        if let viewWithTag = self.view.viewWithTag(11) {
 //             print("Tag 100")
-//             viewWithTag.removeFromSuperview()
-//         } else {
-//             print("tag not found")
-//         }
+
     }
     
     override func viewDidLoad() {
@@ -118,6 +110,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onNavigateToCricBuzz(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToCricBuzz", sender: self)
+    }
+    
 }
 
