@@ -98,7 +98,7 @@ class CricBuzzViewController: ViewController {
         for i in 0..<batsmanProfileCount {
             dynamicImageView.insert(UIImageView(), at: i)
             dynamicImageView[i].frame = CGRect(x: batsmanImgOriginX, y: (batsmanImgOriginY+((i+1)*100)), width: 100, height: 100)
-            dynamicImageView[i].image = UIImage(named: batsmanOrders[i+1]!)
+            dynamicImageView[i].image = UIImage(named: batsmanOrders[i+1] ?? "")
             
             dynamicImageView[i].tag = 11
             self.view.addSubview(dynamicImageView[i])
