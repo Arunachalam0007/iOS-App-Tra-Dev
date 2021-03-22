@@ -11,7 +11,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     @IBOutlet weak var fiirstTableView: UITableView!
     
-    var arr = ["One","Two","Three","Four"]
+    var arr = ["Three","Four"]
     
     //Required
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

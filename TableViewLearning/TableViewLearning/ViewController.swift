@@ -1,0 +1,71 @@
+//
+//  ViewController.swift
+//  TableViewLearning
+//
+//  Created by ArunSha on 22/03/21.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet weak var learnTableView: UITableView!
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("No.ofRownsInSection")
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("cellForRowAT")
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tBCIdentifier", for: indexPath)
+        
+        var textCellTable = UILabel()
+        cell.textLabel?.text = "Hi"
+        cell.detailTextLabel?.text = "Detail Text"
+        cell.imageView?.image = #imageLiteral(resourceName: "I will")
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Hi")
+        let tabCellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
+        let tabCellDescription = tableView.cellForRow(at: indexPath)?.detailTextLabel?.text
+        
+        print(tabCellTitle, tabCellDescription)
+        
+        let title:String = "Hello"
+        
+        if let title = tabCellTitle, let desc = tabCellDescription {
+            tabAlert(title: title , message: desc)
+        }
+        // create the alert
+        
+    }
+    
+    func tabAlert(title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
