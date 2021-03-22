@@ -14,32 +14,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("No.ofRownsInSection")
+       // print("No.ofRownsInSection")
         return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("cellForRowAT")
+        print("cellForRowAT ",indexPath.row)
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tBCIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tBCIdentifier", for: indexPath) as! TableViewCell
         
-        var textCellTable = UILabel()
-        cell.textLabel?.text = "Hi"
-        cell.detailTextLabel?.text = "Detail Text"
-        cell.imageView?.image = #imageLiteral(resourceName: "I will")
+        cell.tbCellLabelView.text = "Hello Sha"
+        cell.tbImagView.image =  #imageLiteral(resourceName: "I will")
         
+        
+//        var textCellTable = UILabel()
+//        cell.textLabel?.text = "Hi"
+//        cell.detailTextLabel?.text = "Detail Text"
+//        cell.imageView?.image = #imageLiteral(resourceName: "I will")
+//
         return cell
         
     }
     
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 200
+//    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Hi")
         let tabCellTitle = tableView.cellForRow(at: indexPath)?.textLabel?.text
         let tabCellDescription = tableView.cellForRow(at: indexPath)?.detailTextLabel?.text
         
-        print(tabCellTitle, tabCellDescription)
-        
-        let title:String = "Hello"
         
         if let title = tabCellTitle, let desc = tabCellDescription {
             tabAlert(title: title , message: desc)

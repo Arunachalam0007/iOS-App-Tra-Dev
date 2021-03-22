@@ -24,6 +24,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         // downcasting
         let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! CustomTableViewCell
         
+
+        
         cell.centerLabel?.text = "Detail Value"
         cell.leftImage?.image = UIImage(named: "Google")
         cell.rightImage?.image = UIImage(named: "Google")
@@ -56,7 +58,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return 200
     }
 
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
